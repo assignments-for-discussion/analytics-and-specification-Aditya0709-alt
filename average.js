@@ -1,6 +1,17 @@
 
 function average(numbers) {
-  return numbers.reduce((p, c)=> p + c, 0) / numbers.length;
+  let sum = 0;
+  let count = numbers.length;
+  
+  numbers.map((value,i) => {
+    if(isNaN(val)){
+      count -= 1;
+    }
+    else {
+      sum += value;
+    }
+  })
+  return (sum/count);
 }
 
 module.exports = {average};
